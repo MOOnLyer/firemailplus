@@ -39,7 +39,7 @@ const isValidUUID = (value: string) => {
 
 // 邮箱格式验证
 const isValidOutlookEmail = (email: string) => {
-  const outlookDomains = ['@outlook.com', '@hotmail.com', '@live.com', '@msn.com'];
+  const outlookDomains = ['@outlook.es', '@outlook.com', '@hotmail.com', '@live.com', '@msn.com'];
   return (
     outlookDomains.some((domain) => email.endsWith(domain)) &&
     /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
